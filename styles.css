@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #000000;
+    color: rgb(15, 222, 19);
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 1rem;
+}
+s
+#search {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#search-input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#genres {
+    display: flex;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+    white-space: nowrap;
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+.genre-btn {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.genre-btn.active, .genre-btn:hover {
+    background-color: #333;
+}
+
+#recent-releases {
+    margin-bottom: 2rem;
+}
+
+#recent-releases h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#recent-releases .movie {
+    margin-bottom: 1rem;
+}
+
+#movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.movie {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(25% - 1rem); /* Ajuste a largura conforme necessário */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Layout vertical */
+}
+
+.movie img {
+    width: 100%;
+    height: 250px; /* Altura fixa para garantir a orientação vertical */
+    object-fit: cover; /* Ajusta a imagem para preencher o espaço */
+}
+
+.movie h2 {
+    margin: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.movie p {
+    margin: 0.5rem;
+    font-size: 0.9rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

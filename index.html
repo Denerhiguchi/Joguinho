@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Filmes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Site de Filmes</h1>
+    </header>
+
+    <main>
+        <section id="search">
+            <input type="text" id="search-input" placeholder="Buscar filmes...">
+        </section>
+
+        <section id="genres">
+            <button class="genre-btn" data-genre="all">Todos</button>
+            <button class="genre-btn" data-genre="acao">Ação</button>
+            <button class="genre-btn" data-genre="aventura">Aventura</button>
+            <button class="genre-btn" data-genre="comedia">Comédia</button>
+            <button class="genre-btn" data-genre="drama">Drama</button>
+            <button class="genre-btn" data-genre="fantasia">Fantasia</button>
+            <button class="genre-btn" data-genre="ficcao-cientifica">Ficção Científica</button>
+            <button class="genre-btn" data-genre="romance">Romance</button>
+            <button class="genre-btn" data-genre="suspense">Suspense</button>
+            <button class="genre-btn" data-genre="terror">Terror</button>
+            <!-- Adicione mais gêneros se necessário -->
+        </section>
+
+        <section id="recent-releases">
+            <h2>Lançamentos Recentes</h2>
+            <article class="movie" data-title="Filme Novo 1" data-genre="acao" data-release="2024-08-01">
+                <img src="https://via.placeholder.com/150" alt="Imagem do filme novo 1">
+                <h2>Filme Novo 1</h2>
+                <p>Descrição do Filme Novo 1.</p>
+                <p><strong>Lançamento:</strong> 1 de Agosto de 2024</p>
+            </article>
+            <article class="movie" data-title="Filme Novo 2" data-genre="comedia" data-release="2024-07-15">
+                <img src="https://via.placeholder.com/150" alt="Imagem do filme novo 2">
+                <h2>Filme Novo 2</h2>
+                <p>Descrição do Filme Novo 2.</p>
+                <p><strong>Lançamento:</strong> 15 de Julho de 2024</p>
+            </article>
+            <!-- Adicione mais lançamentos recentes aqui -->
+        </section>
+
+        <section id="movie-list">
+            <h2>Todos os Filmes</h2>
+            <article class="movie" data-title="Filme 1" data-genre="acao">
+                <img src="https://via.placeholder.com/150" alt="Imagem do filme 1">
+                <h2>Filme 1</h2>
+                <p>Descrição do Filme 1.</p>
+            </article>
+            <article class="movie" data-title="Filme 2" data-genre="comedia">
+                <img src="https://via.placeholder.com/150" alt="Imagem do filme 2">
+                <h2>Filme 2</h2>
+                <p>Descrição do Filme 2.</p>
+            </article>
+            <article class="movie" data-title="Filme 3" data-genre="drama">
+                <img src="https://via.placeholder.com/150" alt="Imagem do filme 3">
+                <h2>Filme 3</h2>
+                <p>Descrição do Filme 3.</p>
+            </article>
+            <!-- Adicione mais filmes aqui -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Site de Filmes. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
